@@ -1,0 +1,22 @@
+doctype 5
+html
+  head
+    title= blog_title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='/javascripts/jquery-min.1.10.js')
+  body
+    #header
+        #blog-header
+            block header
+        #navbar
+            block navbar
+                include navbar
+    #content
+        block content
+
+    #sidebar
+        block sidebar
+            include sidebar
+    #footer
+        block footer
+            include footer

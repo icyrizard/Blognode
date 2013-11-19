@@ -1,0 +1,11 @@
+extends layout
+
+block header
+    .blog-header
+        h1= blog_title
+
+block content
+  #blog-section
+    each post in posts
+        !{post}
+
